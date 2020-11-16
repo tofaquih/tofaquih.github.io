@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "me"
+  },
+  "text": {
+    "more": "Group 1: Amino Acids; Group2: Lipids; Group 3: Peptides; Group 4: Unknown",
+    "intro": "",
+    "title": "This is model 1 This is model 1This is model 1This is model 1This is model 1 "
+  },
+  "legend": {
+    "edgeLabel": "",
+    "colorLabel": "Pathways",
+    "nodeLabel": "Metabolites"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "pathway",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 10,
+      "minEdgeSize": 2,
+      "minNodeSize": 2,
+      "maxNodeSize": 10
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
