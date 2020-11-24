@@ -3,14 +3,14 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "",
+    "file": "https://www.lumc.nl/images/logo-en.svg",
     "link": "",
     "text": "me"
   },
   "text": {
-    "more": "Group 1: Amino Acids; Group2: Lipids; Group 3: Peptides; Group 4: Unknown",
-    "intro": "",
-    "title": "This is model 1 This is model 1This is model 1This is model 1This is model 1 "
+    "more": "loooooooooooogggnngggg\ndisgnbdsgnlkdsng;ds\ndsgsgewwevdsavaf",
+    "intro": "Group 1: Amino Acids\nGroup 2: Lipids",
+    "title": "title"
   },
   "legend": {
     "edgeLabel": "",
@@ -19,12 +19,12 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": "pathway",
+    "groupSelectorAttribute": false,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
     "groupByEdgeDirection": false,
-    "imageAttribute": false
+    "imageAttribute": "logp"
   },
   "sigma": {
     "drawingProperties": {
@@ -41,9 +41,9 @@
     },
     "graphProperties": {
       "maxEdgeSize": 10,
-      "minEdgeSize": 2,
-      "minNodeSize": 2,
-      "maxNodeSize": 10
+      "minEdgeSize": 1,
+      "minNodeSize": 5,
+      "maxNodeSize": 20
     },
     "mouseProperties": {
       "maxRatio": 20,
