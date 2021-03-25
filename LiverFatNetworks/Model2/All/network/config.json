@@ -10,7 +10,7 @@
   "text": {
     "more": "",
     "intro": "",
-    "title": "title"
+    "title": "Model 2"
   },
   "legend": {
     "edgeLabel": "",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": "pathway",
+    "groupSelectorAttribute": false,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
@@ -28,22 +28,22 @@
   },
   "sigma": {
     "drawingProperties": {
-      "defaultEdgeType": "stright",
+      "defaultEdgeType": "curve",
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
       "defaultLabelColor": "#000",
-      "labelThreshold": 8,
+      "labelThreshold": 10,
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 4.5,
-      "minEdgeSize": 0.2,
-      "minNodeSize": 1,
-      "maxNodeSize": 7
+      "maxEdgeSize": 3,
+      "minEdgeSize": 0.5,
+      "minNodeSize": 2,
+      "maxNodeSize": 12
     },
     "mouseProperties": {
       "maxRatio": 20,
