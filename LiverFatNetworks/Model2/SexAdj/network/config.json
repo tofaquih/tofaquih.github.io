@@ -5,12 +5,12 @@
   "logo": {
     "file": "https://www.lumc.nl/images/logo-en.svg",
     "link": "",
-    "text": "Tariq"
+    "text": "Tariq Faquih"
   },
   "text": {
     "more": "",
     "intro": "",
-    "title": "Model 2"
+    "title": "HTGC Metabolomic Profile "
   },
   "legend": {
     "edgeLabel": "",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": false ,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
@@ -41,9 +41,9 @@
     },
     "graphProperties": {
       "maxEdgeSize": 3,
-      "minEdgeSize": 0.5,
-      "minNodeSize": 2,
-      "maxNodeSize": 12
+      "minEdgeSize": 1,
+      "minNodeSize": 5,
+      "maxNodeSize": 15
     },
     "mouseProperties": {
       "maxRatio": 20,
