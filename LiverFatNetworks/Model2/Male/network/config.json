@@ -5,12 +5,12 @@
   "logo": {
     "file": "https://www.lumc.nl/images/logo-en.svg",
     "link": "",
-    "text": "Tariq"
+    "text": "Tariq Faquih"
   },
   "text": {
     "more": "",
     "intro": "",
-    "title": "title"
+    "title": "HTGC Metabolomic Profile in Men"
   },
   "legend": {
     "edgeLabel": "",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": "pathway",
+    "groupSelectorAttribute": false,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
@@ -40,10 +40,10 @@
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 6,
-      "minEdgeSize": 0.2,
-      "minNodeSize": 4,
-      "maxNodeSize": 12
+      "maxEdgeSize": 3,
+      "minEdgeSize": 1,
+      "minNodeSize": 5,
+      "maxNodeSize": 15
     },
     "mouseProperties": {
       "maxRatio": 20,
