@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "https://www.lumc.nl/images/logo-en.svg",
+    "link": "",
+    "text": "me"
+  },
+  "text": {
+    "more": "loooooooooooogggnngggg\ndisgnbdsgnlkdsng;ds\ndsgsgewwevdsavaf",
+    "intro": "Group 1: Amino Acids\nGroup 2: Lipids",
+    "title": "title"
+  },
+  "legend": {
+    "edgeLabel": "",
+    "colorLabel": "Pathways",
+    "nodeLabel": "Metabolites"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": "logp"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 17,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 10
+    },
+    "graphProperties": {
+      "maxEdgeSize": 10,
+      "minEdgeSize": 1,
+      "minNodeSize": 5,
+      "maxNodeSize": 18
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
