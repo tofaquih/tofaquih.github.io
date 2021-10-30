@@ -5,13 +5,13 @@
  */
 
 /* Global Styles */
-
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Helvetica+Neue|Helvetica);
 html,
 body {
     width: 100%;
     height: 100%;
 }
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Helvetica+Neue|Helvetica);
+
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
