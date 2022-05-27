@@ -10,7 +10,7 @@
   "text": {
     "more": "",
     "intro": "",
-    "title": "Model 2 PostMeno"
+    "title": "HTGC Metabolomic Profile "
   },
   "legend": {
     "edgeLabel": "",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": false ,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
@@ -38,6 +38,7 @@
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
       "defaultLabelSize": 14
+    },
     "graphProperties": {
       "maxEdgeSize": 3,
       "minEdgeSize": 1,
