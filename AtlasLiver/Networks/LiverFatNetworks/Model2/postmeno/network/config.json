@@ -10,7 +10,7 @@
   "text": {
     "more": "",
     "intro": "",
-    "title": "Model 2 PostMeno"
+    "title": "HTGC Metabolomic Profile in Women"
   },
   "legend": {
     "edgeLabel": "",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": false ,
     "hoverBehavior": "dim"
   },
   "informationPanel": {
@@ -40,10 +40,10 @@
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 0.5,
-      "minEdgeSize": 0.2,
-      "minNodeSize": 1,
-      "maxNodeSize": 7
+      "maxEdgeSize": 3,
+      "minEdgeSize": 1,
+      "minNodeSize": 5,
+      "maxNodeSize": 15
     },
     "mouseProperties": {
       "maxRatio": 20,
