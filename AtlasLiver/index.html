@@ -81,16 +81,15 @@
 
                 <div class="col-lg-12 text-justify">
                     <p class="lead"><b>Background</b>
-                        Non-alcoholic fatty liver disease (NAFLD) is characterized by the pathological accumulation of triglycerides in hepatocytes and is associated with insulin resistance and atherogenic dyslipidemia. Thus far, the extent of metabolic dysregulation associated with hepatic triglyceride accumulation has not been fully addressed.<br>
+                        Non-alcoholic fatty liver disease (NAFLD) is characterized by the pathological accumulation of triglycerides in hepatocytes and is associated with insulin resistance, atherogenic dyslipidemia, and cardiometabolic diseases. Thus far, the extent of metabolic dysregulation associated with hepatic triglyceride accumulation has not been fully addressed. In this study we aimed to identify metabolites associated hepatic triglyceride content (HTGC) and map into these associations using network analysis. <br>
                         <b>Methods</b>
-                        To gain insight in the spectrum of metabolites associated with hepatic triglyceride accumulation, we performed a comprehensive plasma metabolomics screening (1363 metabolites) in middle aged men and women (N=496) in whom hepatic triglyceride content (HTGC) was measured by 1H magnetic resonance spectroscopy (1H-MRS). Metabolite-HTGC associations were performed corrected for sex and stratified for sex. To gain insight in the metabolic clusters and pathways associated with HTGC, both correlation-based networks as well as graphical metabolic pathway-based networks were identified.<br>
+                        To gain insight in the spectrum of metabolites associated with hepatic triglyceride accumulation, we performed a comprehensive plasma metabolomics screening of 1,363 metabolites in apparently healthy middle aged (age 45-65) individuals (N=496) in whom HTGC was measured by proton magnetic resonance spectroscopy. An atlas of metabolite-HTGC associations was created based on univariate results using correlation-based Gaussian graphical model (GGM) and genome scale metabolic model (GSMM) network analyses. <br>
 
                         <b>Results</b>
-                        Our analyses revealed that, corrected for sex, 118 metabolites were associated with HTGC. The number of associations was much higher in women (83 in women versus 35 in men) and further exacerbated by menopause. However, the direction of the effects was fully overlapping between men and women. Analyses of metabolite correlation networks using a Gaussian graphical model (GGM) revealed a cluster of interconnecting metabolites encompassing branched chain amino acids (BCAA) and xenobiotic metabolites, and a second larger complex cluster encompassing lipid metabolites. Pathway analyses based on a genome scale metabolic model (GSMM)  untangled the metabolite connections seen in GGM using graphical metabolic pathway mapping and metabolite flux alterations associated with HTGC.<br>
+                        Our analyses revealed that 118 metabolites were univariately associated with HTGC (P-value < 6.59×10-5), including 107endogenous, 1 xenobiotic, and 10 uncharacterized metabolites. These associations were mapped to several biological pathways including branched amino acids (BCAA), diglycerols, sphingomyelin, glucosyl- and lactosyl- ceramides. We also identified novel associations between glutamate, metabolonic lactone sulfate, and X-15245 and HTGC from the GGM network. The full interactive metabolite-HTGC atlas is provided online.<br>
 
-                        <b>Conclusion</b> In conclusion, the combined network and pathway analyses showed that:
-                        In men and women, the direction of the association of the  metabolites with HTGC is identical, but for many of these metabolites the effect sizes are larger in women, resulting in  a larger number of associated metabolites in women. HTGC is associated with extensive dysregulation of BCAA metabolism and dyslipidemia characterized by increased metabolite concentrations, particularly diacylglycerols. In addition, we identified associations with glutamate and metabolonic lactone sulfate.
-                        Our data and online resources provide an atlas of metabolomic associations and pathways affected by HTGC.
+                        <b>Conclusion</b>
+                        The combined network and pathway analyses indicated extensive dysregulation of BCAA metabolism, glutamate associated metabolites, diglycerides, sphingomyelins, and ceramides. These pathways provide insight in novel drug targets for treatment or monitoring of NAFLD.
                         </a></p>                        
                         
 
@@ -132,10 +131,7 @@
                                 <h4>
                                     <strong>Gaussian Graphical Model (GGM)</strong>
                                 </h4>
-                                <p class="text-justify">Significant metabolites from the multivariable analysis and the sex stratified analysis were used to develop the GGM networks. 
-                                    All GGM models were created using sparse gaussian graphical model with graphical lasso using the glasso function in R (qgraph R package version 1.6.9). 
-                                    In addition, the Extended Bayesian Information Criterium (EBIC) tuning parameter was used and set to 0.5. 
-                                    Visualization and exploration of the models were created in Gephi and exported as an interactive HTML5 using the sigmaExporter plugin. </p>
+                                <p class="text-justify">Significant metabolites from the main analysis and the sex stratified analysis were used to develop the GGM networks separately. To create the network, we used the full measurements of the metabolites from our imputed dataset. Since we used multiple imputation, we could only select one imputed dataset. The correlations between the metabolites were calculated using sparse Gaussian Graphical Models with graphical LASSO using the glasso function in R (qgraph R package version 1.6.9). In addition, the Extended Bayesian Information Criterium (EBIC) tuning parameter was used and set to 0.5. Based on these correlations, edges were drawn between the correlated metabolite nodes. The size of the nodes was determined by the absolute value of the effect estimate from the multivariable linear regression analysis. The metabolite nodes were colored based on their biochemical super and sub pathway classes and organized in ascending order based on their p-values. Visualization and layout of the networks were created in Gephi and exported as an interactive HTML5 using the sigmaExporter plugin. </p>
                                 <a href="https://www.rdocumentation.org/packages/qgraph/versions/1.6.9/topics/qgraph" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -147,8 +143,9 @@
                                 <h4>
                                     <strong>Genome Scale Metabolic Model (GSMM)</strong>
                                 </h4>
-                                <p class="text-justify">We performed network analysis to visualize the quantified metabolites and their biochemical relation in a holistic fashion. 
-                                    Specifically, we mapped the metabolite names onto a curated version of the HMR 2 genome-scale metabolic model (GSMM) and calculated which metabolite pairs were ≤ 2 reaction steps apart in the model. This resulted in a network of connected metabolites that we integrated with biochemical reaction and pathway knowledge into an interactive HTML/JavaScript document.</p>
+                                <p class="text-justify">We mapped the metabolite names onto a curated version of the Human Metabolic Reactions database (HMR 2) genome-scale metabolic model (GSMM) (16) and calculated which metabolite pairs were ≤ 2 reaction steps apart in the model. The GSMM-HMR2 was used to determine the biochemical interconversions between the metabolites that were measured on the Metabolon platform. All computations described in this section were performed in MATLAB R2019b. To facilitate the mapping of metabolomics data to the GSMM, we enriched the model with compound synonyms and external identifiers from the Chemical Entities of Biological Interest (ChEBI) database (17), where ChEBI identifiers and synonyms of conjugate acids and bases were also included. Of the 1067 metabolites with known identity that were quantified, 400 mapped properly to the GSMM. All reactions and compounds in HMR2 were checked for mass and redox balance and were adjusted when necessary.
+
+                                    This resulted in a network of connected metabolites that we integrated with biochemical reaction and pathway knowledge into an interactive HTML/JavaScript document.The results from the network analysis include measured associated metabolites as well as relevant intermediate metabolites regardless of whether they were measured in the dataset. In addition, the network shows the directionality of the biological reaction paths for the biosynthesis and degradation of the metabolites and includes details regarding the involved genes and intermediate reaction steps. Furthermore, for all metabolites and genes, also those not included in the network, hyperlinks to external databases and gene expression profiles are provided.  Reaction information was enriched by importing tissue-specific gene expression from the Human Protein Atlas (HPA) and Genotype-Tissue Expression (GTEx) project.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -223,7 +220,7 @@
                 <div class="col-lg-12 text-center">
                     <h3>For more information regarding the paper and our other projects:</h3>
                     <a href="#" class="btn btn-lg btn-light">Full Text</a>
-                    <a href="https://tofaquih.github.io/" class="btn btn-lg btn-dark">My Webpage</a>
+                    <a href="#" class="btn btn-lg btn-dark">My Webpage</a>
                 </div>
             </div>
         </div>
@@ -236,9 +233,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Tariq Faquih</strong></h4>
+                    <h4><strong>Tariq Faquih</strong>
+                    </h4>
                     <p>Leiden<br>Netherlands, 2333 ZA</p>
-                    <p class="text-muted">Copyright &copy; tofaquih.github.io/AtlasLiver/ 2021<br>Leiden University Medical Center </p>
+                    <ul class="list-unstyled">
+
+                    </ul>
+
+                    <p class="text-muted">Copyright &copy; tofaquih.github.io/AtlasLiver/ 2022<br>Leiden University Medical Center </p>
                 </div>
             </div>
         </div>
