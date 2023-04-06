@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Hepatic triglyceride content Atlas">
+    <meta name="author" content="Tariq Faquih">
 
-    <title>Atlas of Liver Fat</title>
+    <title>Hepatic triglyceride content is intricately associated with numerous metabolites and biochemical pathways</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Atlas of metabolites and pathways associated with hepatic triglyceride content in middle aged men and women</h1>
+            <h1>Hepatic triglyceride content is intricately associated with numerous metabolites and biochemical pathways</h1>
 
 
             <br>
@@ -81,15 +81,15 @@
 
                 <div class="col-lg-12 text-justify">
                     <p class="lead"><b>Background</b>
-                        Non-alcoholic fatty liver disease (NAFLD) is characterized by the pathological accumulation of triglycerides in hepatocytes and is associated with insulin resistance, atherogenic dyslipidemia, and cardiometabolic diseases. Thus far, the extent of metabolic dysregulation associated with hepatic triglyceride accumulation has not been fully addressed. In this study we aimed to identify metabolites associated hepatic triglyceride content (HTGC) and map into these associations using network analysis. <br>
+                        Non-alcoholic fatty liver disease (NAFLD) is characterized by the pathological accumulation of triglycerides in hepatocytes and is associated with insulin resistance, atherogenic dyslipidaemia and cardiometabolic diseases. Thus far, the extent of metabolic dysregulation associated with hepatic triglyceride accumulation has not been fully addressed. In this study, we aimed to identify metabolites associated with hepatic triglyceride content (HTGC) and map these associations using network analysis. <br>
                         <b>Methods</b>
-                        To gain insight in the spectrum of metabolites associated with hepatic triglyceride accumulation, we performed a comprehensive plasma metabolomics screening of 1,363 metabolites in apparently healthy middle aged (age 45-65) individuals (N=496) in whom HTGC was measured by proton magnetic resonance spectroscopy. An atlas of metabolite-HTGC associations was created based on univariate results using correlation-based Gaussian graphical model (GGM) and genome scale metabolic model (GSMM) network analyses. <br>
+                        To gain insight in the spectrum of metabolites associated with hepatic triglyceride accumulation, we performed a comprehensive plasma metabolomics screening of 1363 metabolites in apparently healthy middle aged (age 45–65) individuals (N = 496) in whom HTGC was measured by proton magnetic resonance spectroscopy. An atlas of metabolite–HTGC associations, based on univariate results, was created using correlation-based Gaussian graphical model (GGM) and genome scale metabolic model network analyses. Pathways associated with the clinical prognosis marker fibrosis 4 (FIB-4) index were tested using a closed global test. <br>
 
                         <b>Results</b>
-                        Our analyses revealed that 118 metabolites were univariately associated with HTGC (P-value < 6.59×10-5), including 107endogenous, 1 xenobiotic, and 10 uncharacterized metabolites. These associations were mapped to several biological pathways including branched amino acids (BCAA), diglycerols, sphingomyelin, glucosyl- and lactosyl- ceramides. We also identified novel associations between glutamate, metabolonic lactone sulfate, and X-15245 and HTGC from the GGM network. The full interactive metabolite-HTGC atlas is provided online.<br>
+                        Our analyses revealed that 118 metabolites were univariately associated with HTGC (p-value <6.59 × 10−5), including 106 endogenous, 1 xenobiotic and 11 partially characterized/uncharacterized metabolites. These associations were mapped to several biological pathways including branched amino acids (BCAA), diglycerols, sphingomyelin, glucosyl-ceramide and lactosyl-ceramide. We also identified a novel possible HTGC-related pathway connecting glutamate, metabolonic lactone sulphate and X-15245 using the GGM network. These pathways were confirmed to be associated with the FIB-4 index as well. <br>
 
                         <b>Conclusion</b>
-                        The combined network and pathway analyses indicated extensive dysregulation of BCAA metabolism, glutamate associated metabolites, diglycerides, sphingomyelins, and ceramides. These pathways provide insight in novel drug targets for treatment or monitoring of NAFLD.
+                        The combined network and pathway analyses indicated extensive associations between BCAA and the lipids pathways with HTGC and the FIB-4 index. Moreover, we report a novel pathway glutamate-metabolonic lactone sulphate-X-15245 with a potential strong association with HTGC. These findings can aid elucidating HTGC metabolomic profiles and provide insight into novel drug targets for fibrosis-related outcomes.
                         </a></p>                        
                         
 
@@ -97,8 +97,8 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     <hr class="small">
-                    <h3>Our paper is published in the journal of __________</h3>
-                    <a href="#" class="btn btn-lg btn-dark">PubMed Page</a><br><br>
+                    <h3>Our paper is published in the journal Liver International</h3>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/37017544/" class="btn btn-lg btn-dark">PubMed Page</a><br><br>
                 </div>
                 
 
@@ -131,8 +131,8 @@
                                 <h4>
                                     <strong>Gaussian Graphical Model (GGM)</strong>
                                 </h4>
-                                <p class="text-justify">Significant metabolites from the main analysis and the sex stratified analysis were used to develop the GGM networks separately. To create the network, we used the full measurements of the metabolites from our imputed dataset. Since we used multiple imputation, we could only select one imputed dataset. The correlations between the metabolites were calculated using sparse Gaussian Graphical Models with graphical LASSO using the glasso function in R (qgraph R package version 1.6.9). In addition, the Extended Bayesian Information Criterium (EBIC) tuning parameter was used and set to 0.5. Based on these correlations, edges were drawn between the correlated metabolite nodes. The size of the nodes was determined by the absolute value of the effect estimate from the multivariable linear regression analysis. The metabolite nodes were colored based on their biochemical super and sub pathway classes and organized in ascending order based on their p-values. Visualization and layout of the networks were created in Gephi and exported as an interactive HTML5 using the sigmaExporter plugin. </p>
-                                <a href="https://www.rdocumentation.org/packages/qgraph/versions/1.6.9/topics/qgraph" class="btn btn-light">Learn More</a>
+                                <p class="text-justify">Significant metabolites from the main analysis and the sex stratified analysis were used to develop the GGM networks separately. To create the network, we used the full measurements of the metabolites from our imputed dataset. Since we used multiple imputation, we could only select one imputed dataset. The correlations between the metabolites and HTGC were calculated using sparse Gaussian Graphical Models with graphical LASSO using the glasso function in R (qgraph R package version 1.6.9) coupled with the Extended Bayesian Information Criterium (EBIC) to tune the LASSO shrinkage factor. EBIC has been reported in simulation studies to perform better than the standard BIC, particularly for controlling false positivity rates. Here, we set the EBIC tuning parameter to the default value of 0.5 (wherein a value of 0 uses standard BIC) for a balanced tuning . Based on the correlation coefficients, edges were drawn between the correlated metabolite nodes with the width corresponding to the coefficient strength. The size of the nodes was determined by the absolute value of the effect estimate from the multivariable linear regression analysis. The metabolite nodes were colored based on their biochemical super and sub pathway classes and organized in ascending order based on their p-values. Visualization and layout of the networks were created in Gephi and exported as an interactive HTML5 using the sigmaExporter plugin.  </p>
+                                <a href="https://onlinelibrary.wiley.com/doi/10.1111/liv.15575#support-information-section" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -143,10 +143,13 @@
                                 <h4>
                                     <strong>Genome Scale Metabolic Model (GSMM)</strong>
                                 </h4>
-                                <p class="text-justify">We mapped the metabolite names onto a curated version of the Human Metabolic Reactions database (HMR 2) genome-scale metabolic model (GSMM) (16) and calculated which metabolite pairs were ≤ 2 reaction steps apart in the model. The GSMM-HMR2 was used to determine the biochemical interconversions between the metabolites that were measured on the Metabolon platform. All computations described in this section were performed in MATLAB R2019b. To facilitate the mapping of metabolomics data to the GSMM, we enriched the model with compound synonyms and external identifiers from the Chemical Entities of Biological Interest (ChEBI) database (17), where ChEBI identifiers and synonyms of conjugate acids and bases were also included. Of the 1067 metabolites with known identity that were quantified, 400 mapped properly to the GSMM. All reactions and compounds in HMR2 were checked for mass and redox balance and were adjusted when necessary.
-
-                                    This resulted in a network of connected metabolites that we integrated with biochemical reaction and pathway knowledge into an interactive HTML/JavaScript document.The results from the network analysis include measured associated metabolites as well as relevant intermediate metabolites regardless of whether they were measured in the dataset. In addition, the network shows the directionality of the biological reaction paths for the biosynthesis and degradation of the metabolites and includes details regarding the involved genes and intermediate reaction steps. Furthermore, for all metabolites and genes, also those not included in the network, hyperlinks to external databases and gene expression profiles are provided.  Reaction information was enriched by importing tissue-specific gene expression from the Human Protein Atlas (HPA) and Genotype-Tissue Expression (GTEx) project.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p class="text-justify">We mapped the metabolite names onto a curated version of the Human1 genome-scale metabolic model (17) and calculated the biochemical interconversions between all pairs of metabolites that were measured on the Metabolon platform on a liver-specific subset of the model. To facilitate the mapping of metabolomics data to the GSMM, we enriched the model with compound synonyms and external identifiers from the Chemical Entities of Biological Interest (ChEBI) database (18), where ChEBI identifiers and synonyms of conjugate acids and bases were also included. Of the 1067 metabolites with known identity that were quantified, 436 mapped properly to the GSMM. All reactions and compounds in Human1 were checked for mass and redox balance and were adjusted when necessary. 
+                                    Biochemical interactions between metabolites were determined by converting the GSMM into a weighted directed graph where nodes represent metabolites and edges represent reactions. Subsequently all reaction paths between the measured metabolites that involved one or two reaction steps were determined using a generic path finding algorithm that was developed in house. 
+                                    
+                                    This resulted in a network of connected metabolites that we integrated with biochemical reaction and pathway knowledge into an interactive HTML/JavaScript document. The results from the network analysis include measured associated metabolites as well as relevant intermediate metabolites regardless of whether they were measured in the dataset. In addition, the network shows the directionality of the biological reaction paths for the biosynthesis and degradation of the metabolites and includes details regarding the involved genes and intermediate reaction steps. Furthermore, for all metabolites and genes, also those not included in the network, hyperlinks to external databases and gene expression profiles are provided.  Reaction information was enriched by importing tissue-specific gene expression from the Human Protein Atlas (19) and Genotype-Tissue Expression (GTEx) project. 
+                                    All computations described in this section were performed in MATLAB R2019b.
+                                    </p>
+                                <a href="https://onlinelibrary.wiley.com/doi/10.1111/liv.15575#support-information-section" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -219,8 +222,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>For more information regarding the paper and our other projects:</h3>
-                    <a href="#" class="btn btn-lg btn-light">Full Text</a>
-                    <a href="#" class="btn btn-lg btn-dark">My Webpage</a>
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1111/liv.15575" class="btn btn-lg btn-light">Full Text</a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/37017544/" class="btn btn-lg btn-dark">Pubmed</a>
+                    <a href="https://tofaquih.github.io/" class="btn btn-lg btn-dark">My Webpage</a>
                 </div>
             </div>
         </div>
@@ -240,7 +244,7 @@
 
                     </ul>
 
-                    <p class="text-muted">Copyright &copy; tofaquih.github.io/AtlasLiver/ 2022<br>Leiden University Medical Center </p>
+                    <p class="text-muted">Copyright &copy; tofaquih.github.io/AtlasLiver/ 2023<br>Leiden University Medical Center </p>
                 </div>
             </div>
         </div>
