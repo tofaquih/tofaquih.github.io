@@ -52,6 +52,14 @@ h5 {
 }
 h6 {
 	font-weight: 700;
+	max-width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* Limit to a maximum of 2 lines */
+	-webkit-box-orient: vertical;
 }
 h1 span,
 h2 span,
