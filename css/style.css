@@ -998,3 +998,23 @@ border-radius: 50%;
 .bold-arabic-text {
 	font-weight: bold;
   }
+
+audio::-webkit-media-controls-play-button {
+    transform: scale(6, 6);
+}
+
+audio::-webkit-media-controls-timeline {
+    height: 30px;
+    transform: scale(1, 1.5);  
+}
+
+audio::-webkit-media-controls-seek-back-button {
+	/* Your custom styles here */
+	background-color: lightblue;
+	border: 1px solid blue;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.2em;
+	/* Add more styles as needed */
+  }
+

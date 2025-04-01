@@ -10,7 +10,9 @@ function getQueryParam(name) {
     const audioPlayer = document.getElementById('myAudio');
     const summaryElement = document.getElementById('summary');
     const toggle = document.getElementById('LangToggle');
+    const authors = document.getElementById('authors-string');
 
+    let authorstext = ''
     let englishJsonFile = './audio/summary-en.json'; // Default JSON file    
     let arabicJsonFile = './audio/summary-ar.json'; // arabic JSON file    
     let currentJsonFile = './audio/summary-en.json';
@@ -25,17 +27,20 @@ function getQueryParam(name) {
       if (clickedText == 'SHSpodcast') {
           episodeTitle = 'Genetics of Composite Sleep Health Scores in 413,904 Individuals'
           audioPlayer.src = `Genetics of Composite Sleep Health Scores in 413,904 Individuals.wav`
+          authorstext = "Goodman MO, Faquih T, Paz V, Nagarajan P, Lane JM, Spitzer B, Maher M, Chung J, Cade BE, Purcell SM, Zhu X, Noordam R, Phillips AJK, Kyle SD, Spiegelhalder K, Weedon MN, Lawlor DA, Rotter JI, Taylor KD, Isasi CR, Sofer T, Dashti HS, Rutter MK, Redline S, Saxena R, Wang H."
           headerElement.textContent = episodeTitle;
           $(".banner-image-pod").backstretch('images/SHS.jpg');
       } else if (clickedText == 'MetaboAgePod'){
           audioPlayer.src = "audio/Metabolomic Prediction of Age Using Endogenous and Xenobiotic Metabolites.wav"
           episodeTitle = 'Metabolomic Prediction of Age Using Endogenous and Xenobiotic Metabolites'
           headerElement.textContent = episodeTitle;  
+          authorstext = "Faquih TO, van Hylckama Vlieg A, Surendran P, Butterworth AS, Li-Gao R, de Mutsert R, Rosendaal FR, Noordam R, van Heemst D, Willems van Dijk K, Mook-Kanamori DO."
           $(".banner-image-pod").backstretch('images/portfolio-7.png');
       } else if (clickedText == 'pfaspod'){
         audioPlayer.src = "audio/PFAS Exposure Links to Unfavorable Cardio-Metabolic Profiles.wav"
         episodeTitle = 'PFAS Exposure Links to Unfavorable Cardio-Metabolic Profiles'
         headerElement.textContent = episodeTitle;   
+        authorstext = "Faquih, T.O., Landstra, E.N., van Hylckama Vlieg, A. et al."
         $(".banner-image-pod").backstretch('images/portfolio-5.png');
 
     }
@@ -44,6 +49,7 @@ function getQueryParam(name) {
       headerElement.textContent = 'Welcome!'; // Optional default text
     }
 
+    authors.textContent = authorstext;
 
     function setInitialState() {
         const savedState = localStorage.getItem('lang');
