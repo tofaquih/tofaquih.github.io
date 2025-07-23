@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: A Multi-Omics Approach to Cardiometabolic Disease</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            line-height: 1;
+            color: #FF9B00;
+        }
+        .section-title {
+            color: #002F6C;
+        }
+        .kpi-value {
+             color: #FF9B00;
+        }
+        .view-source-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #002F6C;
+            background-color: transparent;
+            border: 2px solid #002F6C;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease-in-out;
+        }
+        .view-source-btn:hover {
+            background-color: #002F6C;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold section-title mb-2">Modeling Cardiovascular Disease Through Omics, Environment, and AI</h1>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-2">The Research Vision of Tariq Faquih, PhD</h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto">A Lifecourse Approach to Prediction and Causality, leveraging Finland's world-class cohorts to enable a new generation of precision health.</p>
+        </header>
+
+        <main class="space-y-12">
+            
+            <section id="challenge" class="bg-blue-50 rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-4">The Public Health Challenge in Finland</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Cardiovascular disease (CVD) remains the leading cause of mortality in Finland. According to WHO data, the rates for specific CVDs highlight the urgent need for innovative research to lower their prevalence and impact.</p>
+                <div class="w-full max-w-4xl mx-auto">
+                    <div class="chart-container h-[400px] md:h-[450px]">
+                        <canvas id="diseaseBurdenChart"></canvas>
+                    </div>
+                </div>
+                <button class="view-source-btn" data-title="Source: Public Health Challenge" data-text="Background and Rationale: Cardiovascular disease (CVD) remains the leading cause of morbidity and mortality worldwide and in Finland. According to WHO data, Finland’s highest mortality rates are due to ischemic heart disease (186 deaths per 100,000), stroke (84.6), and hypertensive heart disease (68.1). My group will focus on understanding the complex molecular and environmental factors that drive CVD risk to prevent its prevalence, progression, and lower its mortality rate.">Details</button>
+            </section>
+            
+            <section id="aim1" class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-2">Aim 1: AI-Powered Risk Prediction</h2>
+                <p class="text-center text-gray-600 mb-4 max-w-3xl mx-auto">This aim integrates multi-omics and environmental data to build dynamic, predictive models of CVD risk using a cutting-edge, three-tiered machine learning strategy.</p>
+                 <button class="view-source-btn" data-title="Source: Aim 1" data-text="Bayesian Neural Network Modeling: The results from our association analyses will be an essential stepping stone for the main focus of this aim: developing and applying Probabilistic BNN deep learning models. BNNs offer a powerful framework for uncertainty quantification, providing confidence intervals alongside point estimates—a unique feature among neural networks—while enabling complex pattern recognition. This probabilistic property is particularly important for epidemiological interpretability. This AI-driven approach is the core innovation I bring to FIMM. With my proven pipeline, established and validated during my postdoctoral work, I am uniquely positioned to lead this effort. Our group will thoroughly optimize our BNNs and benchmark them against Elastic Net and Random Forest approaches.">Details</button>
+                <div class="flex flex-col md:flex-row items-center justify-around space-y-8 md:space-y-0 md:space-x-8 text-center my-10">
+                    <div class="flex flex-col items-center">
+                        <div class="text-4xl mb-2">🧬</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Stage 1: Associate</h3>
+                        <p class="text-gray-600 max-w-xs">Identify associations between omics (proteomics, metabolomics) and environmental exposures with CVD.</p>
+                    </div>
+                    <div class="flow-arrow hidden md:block">→</div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-4xl mb-2">🤖</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Stage 2: Predict</h3>
+                        <p class="text-gray-600 max-w-xs">Develop and benchmark predictive models, from Elastic Net to Random Forest, to stratify individuals by risk.</p>
+                    </div>
+                    <div class="flow-arrow hidden md:block">→</div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-4xl mb-2">🎯</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Stage 3: Innovate</h3>
+                        <p class="text-gray-600 max-w-xs">Deploy Probabilistic Bayesian Neural Networks (BNNs) to not only predict, but also quantify the model's confidence.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="aim2" class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-2">Aim 2: A Dynamic View of Lifecourse Causality</h2>
+                <p class="text-center text-gray-600 mb-4 max-w-3xl mx-auto">Standard methods offer a static, lifelong snapshot of genetic risk. This research will pioneer a dynamic understanding by modeling how an exposure's causal impact changes over time, identifying critical windows of risk that were previously hidden.</p>
+                 <button class="view-source-btn" data-title="Source: Aim 2" data-text="Background and Rationale: Understanding when and how exposures influence disease risk , such as CVD, throughout life and life stages is crucial. This knowledge will allow our group to understand how the genetics associations affect exposures dynamically across periods of life or lifetimes... Most research efforts focus on either machine learning or Mendelian Randomization (MR), but rarely integrate the two. Building upon the findings from the association analyses and AI modelling from Aim 1, our group aims to validate the causal underpinnings of omics signatures using time-varying MR techniques. This integrated strategy connects data-driven prediction with mechanistic understanding—moving our work from statistical association to actionable intervention.">Details</button>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-6">
+                    <div class="space-y-6 text-left">
+                        <div>
+                            <h3 class="text-xl font-bold section-title mb-2">Standard MR Assumption</h3>
+                            <p class="text-gray-600 mb-4">Traditional Mendelian Randomization (MR) assumes a gene has a single, constant effect on risk throughout life. This can mask the true nature of time-varying causal effects and lead to simplified interpretations.</p>
+                            <div class="flex items-center justify-center space-x-4 p-4 bg-gray-100 rounded-lg">
+                                <span class="font-semibold">Gene Variant</span>
+                                <span class="text-2xl" style="color: #FF9B00;">→</span>
+                                <span class="border-2 border-dashed font-semibold p-2 rounded" style="border-color: #B31942; color: #B31942;">Single Lifelong Risk</span>
+                                <span class="text-2xl" style="color: #FF9B00;">→</span>
+                                <span class="font-semibold">Disease</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold section-title mb-2">Our Approach: Dynamic Trajectory</h3>
+                            <p class="text-gray-600">By using advanced time-varying MR (e.g., MVMR, MPCMR), we can model the entire exposure trajectory to understand when risk is most potent. This requires rich, longitudinal data—making FIMM the ideal setting for this research.</p>
+                        </div>
+                     </div>
+                     <div class="chart-container h-96">
+                         <canvas id="lifecourseChart"></canvas>
+                     </div>
+                 </div>
+            </section>
+
+            <section id="cohorts" class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-2">Data Ecosystem: A Foundation for Robust Science</h2>
+                <p class="text-center text-gray-600 mb-4 max-w-3xl mx-auto">This research is built upon an unparalleled foundation of rich longitudinal data. By leveraging premier Finnish cohorts for discovery and validating findings in diverse international populations, the results will be both robust and globally generalizable.</p>
+                <button class="view-source-btn" data-title="Source: Data Ecosystem" data-text="Data Sources and Exposure-Outcome Associations: My group's lifecourse causal inference analyses will leverage longitudinal Finnish cohorts including FinnGen, Health 2000/2011, Finnish Twin Cohort, and FINRISK...
+
+External Validation and Replication: To strengthen and generalize our findings, our group will pursue rigorous external validation using several international cohorts known for their comprehensive data. The two main targets are the UK Biobank and The Multi-Ethnic Study of Atherosclerosis (MESA)... Other options to be considered are studies in the National Sleep Research Resource, INTERVAL, Netherlands Epidemiology of Obesity (NEO), the Rheinland Study, the Hispanic Community Health Study, and the All of Us study.">Details</button>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-6">
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="font-bold text-gray-800">FinnGen</p>
+                        <p class="text-sm text-gray-600">Primary Discovery</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="font-bold text-gray-800">FINRISK</p>
+                        <p class="text-sm text-gray-600">Replication & MR</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="font-bold text-gray-800">Health 2000/2011</p>
+                        <p class="text-sm text-gray-600">Longitudinal Data</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="font-bold text-gray-800">Finnish Twin Cohort</p>
+                        <p class="text-sm text-gray-600">Causal Inference</p>
+                    </div>
+                    <div class="p-4 bg-gray-200 rounded-lg col-span-2">
+                        <p class="font-bold text-gray-800">UK Biobank (UKB)</p>
+                        <p class="text-sm text-gray-600">Main External Replication</p>
+                    </div>
+                     <div class="p-4 bg-gray-200 rounded-lg col-span-2">
+                        <p class="font-bold text-gray-800">MESA, INTERVAL, NEO, & more</p>
+                        <p class="text-sm text-gray-600">Diverse International Validation</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="timeline" class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-2">5-Year Research Timeline & Milestones</h2>
+                <p class="text-center text-gray-600 mb-4 max-w-3xl mx-auto">The research program is structured with clear, overlapping phases to ensure continuous progress from foundational research and grant acquisition to long-term innovation.</p>
+                <button class="view-source-btn" data-title="Source: Timeline & Funding" data-text="My research program is designed for long-term growth and impact, building upon the generous 5-year funding package... The initial five years will be dedicated to establishing my group, generating high-impact data from Aims 1 and 2, and solidifying our position as leaders in computational medicine...
+
+Program Expansion (Years 3-5): My primary focus will be on securing the next wave of funding. I will prepare a highly competitive application for an ERC Starting Grant.
+
+Long-Term Vision and Innovation (Beyond Year 5): Looking further ahead, my objective is to secure an ERC Consolidator Grant to scale our research. For our Moonshot Vision, the translational development of the wearable device will be funded through dedicated innovation grants.">Details</button>
+                <div class="w-full max-w-5xl mx-auto mt-6">
+                    <div class="chart-container h-[500px] max-h-[500px]">
+                        <canvas id="ganttChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="moonshot" class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold section-title mb-2">Moonshot Vision: The Future of Health Monitoring</h2>
+                <p class="text-center text-gray-600 mb-4 max-w-3xl mx-auto">Building on Aim 1, the long-term vision is a wrist-worn wearable that performs real-time, on-device cardiometabolic risk assessment, transforming passive data logging into active, personalized health management.</p>
+                <button class="view-source-btn" data-title="Source: Moonshot Vision" data-text="This long-term vision extends beyond my primary research aims to translate our predictive models and causal findings into a tangible technology for personalized health research. The objective is to engineer a wrist-worn device that moves beyond simple activity tracking to provide a continuous, personalized assessment of cardiometabolic risk outcomes... The core technological focus here is Tiny Machine Learning (TinyML). This field focuses on optimizing sophisticated AI models, like the BNNs from Aim 1, to operate directly on small, power-efficient microcontrollers... To realize this, I hope to explore collaboration with FCAI to adapt my BNN models for low-power, on-device inference. After a prototype is developed using aforementioned features, the next step would be to add basic biochemical measurements. My group will also explore integrating pioneering Finnish technologies, such as GlucoModicum’s needle-free interstitial fluid (ISF) sensing platform...">Details</button>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-6">
+                    <div class="flex flex-col items-center">
+                        <div class="text-5xl mb-3">⌚</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Continuous Sensing</h3>
+                        <p class="text-gray-600">Fuses data from physiological sensors (heart rate, PPG) and environmental sensors (noise, air pollution).</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-5xl mb-3">🧠</div>
+                        <h3 class="text-xl font-semibold text-gray-700">On-Device TinyML</h3>
+                        <p class="text-gray-600">Runs compressed probabilistic AI models directly on the device for real-time, privacy-preserving insights.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-5xl mb-3">💧</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Biochemical Resolution</h3>
+                        <p class="text-gray-600">Future integration with needle-free interstitial fluid sensing to monitor key metabolic biomarkers.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="funding" class="text-center bg-[#B31942] text-white rounded-lg shadow-lg p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Future Funding Strategy</h2>
+                <p class="text-lg md:text-xl opacity-90 max-w-4xl mx-auto mb-4">A phased funding strategy is designed to ensure long-term growth and impact, building upon the initial FIMM-EMBL package to expand the program's scope and drive innovation.</p>
+                 <button class="view-source-btn !text-white !border-white hover:!bg-white hover:!text-[#B31942]" data-title="Source: Future Funding Strategy" data-text="My research program is designed for long-term growth and impact, building upon the generous 5-year funding package provided with the FIMM-EMBL Group Leader position. The initial five years will be dedicated to establishing my group, generating high-impact data from Aims 1 and 2, and solidifying our position as leaders in computational medicine. My strategy for securing funding beyond this initial period is phased to ensure sustainability and expand our scientific scope.
+
+Program Expansion (Years 3-5): While supported by the start-up package, my primary focus will be on securing the next wave of funding to broaden our research program. I will prepare a highly competitive application for an ERC Starting Grant...
+
+Long-Term Vision and Innovation (Beyond Year 5): Looking further ahead, my objective is to secure an ERC Consolidator Grant to scale our research... For our Moonshot Vision, the translational development of the wearable device will be funded through dedicated innovation grants... we will target instruments like the European Innovation Council (EIC) Accelerator and strategic funding from Business Finland to drive clinical validation and even commercialization.">Details</button>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">📈</h3>
+                        <p class="font-semibold text-xl">Program Expansion</p>
+                        <p class="opacity-80">Secure an ERC Starting Grant to expand the research program to a wider spectrum of cardiometabolic disorders.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">🚀</h3>
+                        <p class="font-semibold text-xl">Long-Term Innovation</p>
+                        <p class="opacity-80">Secure an ERC Consolidator Grant to scale research and pioneer new methodologies.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">💡</h3>
+                        <p class="font-semibold text-xl">Translational Development</p>
+                        <p class="opacity-80">Fund the "Moonshot Vision" wearable through dedicated innovation grants.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="impact" class="text-center bg-[#002F6C] text-white rounded-lg shadow-lg p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Expected Translational Impact</h2>
+                <p class="text-lg md:text-xl opacity-90 max-w-4xl mx-auto mb-4">This research program is designed to bridge the gap between complex data and clinical application, delivering tangible benefits for public health, therapeutic development, and personalized medicine.</p>
+                 <button class="view-source-btn !text-white !border-white hover:!bg-white hover:!text-[#002F6C]" data-title="Source: Expected Translational Impact" data-text="Cardiovascular disease risk evolves across the lifecourse, shaped by complex interactions between biology, environment, and time. By applying advanced AI and causal inference to rich longitudinal data, my research plan will reveal how and when risk arises and progresses. The models developed by my group aim to enable precision health—providing personalized, time-sensitive prediction, prevention, and treatment strategies.
+
+Through collaborations with HiLIFE, FIMM, and the Centre of Excellence in Complex Disease Genetics at FIMM, my group will translate these insights into validated therapeutic targets and digital health tools.">Details</button>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">🎯</h3>
+                        <p class="font-semibold text-xl">Accurate Risk Stratification</p>
+                        <p class="opacity-80">Identify high-risk individuals earlier and more accurately for preventative action.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">💊</h3>
+                        <p class="font-semibold text-xl">Novel Drug Targets</p>
+                        <p class="opacity-80">Pinpoint causal pathways to streamline and de-risk new therapeutic development.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold kpi-value mb-2">🌿</h3>
+                        <p class="font-semibold text-xl">Personalized Prevention</p>
+                        <p class="opacity-80">Guide public health interventions and individual lifestyle changes based on lifecourse data.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>Infographic based on the research proposal for the FIMM-EMBL Group Leader Position by Dr. Tariq Faquih.</p>
+        </footer>
+
+    </div>
+    
+    <div id="source-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col">
+            <header class="p-4 border-b flex justify-between items-center">
+                <h3 id="modal-title" class="text-xl font-bold section-title"></h3>
+                <button id="modal-close-btn" class="text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+            </header>
+            <main class="p-6 overflow-y-auto">
+                <pre id="modal-text" class="text-sm text-gray-700 whitespace-pre-wrap" style="font-family: 'Inter', sans-serif;"></pre>
+            </main>
+        </div>
+    </div>
+
+
+<script>
+    const newColorPalette = {
+        darkBlue: '#002F6C',
+        crimson: '#B31942',
+        gold: '#FF9B00'
+    };
+
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        if (!item) return '';
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        }
+        return label;
+    };
+    
+    const wrapLabel = (label, maxWidth) => {
+        if (typeof label !== 'string' || label.length <= maxWidth) {
+            return label;
+        }
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = '';
+        words.forEach(word => {
+            if ((currentLine + ' ' + word).trim().length > maxWidth && currentLine.length > 0) {
+                lines.push(currentLine);
+                currentLine = word;
+            } else {
+                currentLine = (currentLine + ' ' + word).trim();
+            }
+        });
+        if (currentLine.length > 0) {
+            lines.push(currentLine);
+        }
+        return lines;
+    };
+
+
+    const diseaseData = {
+        labels: [
+            wrapLabel('Ischemic Heart Disease', 16),
+            wrapLabel('Stroke', 16),
+            wrapLabel('Hypertensive Heart Disease', 16)
+        ],
+        datasets: [{
+            label: 'Deaths per 100,000 (WHO Data)',
+            data: [186, 84.6, 68.1],
+            backgroundColor: [
+                newColorPalette.crimson,
+                newColorPalette.gold,
+                newColorPalette.darkBlue
+            ],
+            borderColor: '#ffffff',
+            borderWidth: 1
+        }]
+    };
+
+    const diseaseOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y',
+        plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { title: tooltipTitleCallback } }
+        },
+        scales: {
+            y: {
+                ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } },
+                grid: { display: false }
+            },
+            x: {
+                ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } },
+                grid: { color: '#e5e7eb' }
+            }
+        }
+    };
+
+    const lifecourseData = {
+        labels: ['Childhood', 'Adolescence', 'Early Adulthood', 'Mid-life', 'Late Life'],
+        datasets: [{
+            label: 'Dynamic Causal Effect',
+            data: [5, 15, 45, 65, 50],
+            fill: true,
+            borderColor: newColorPalette.darkBlue,
+            backgroundColor: '#002F6C33',
+            tension: 0.4,
+            pointBackgroundColor: newColorPalette.darkBlue,
+            pointRadius: 5
+        },
+        {
+            label: 'Static (Cumulative) Effect',
+            data: [10, 20, 30, 40, 50],
+            fill: false,
+            borderColor: newColorPalette.gold,
+            borderDash: [5, 5],
+            tension: 0.1,
+            pointRadius: 5,
+            pointBackgroundColor: newColorPalette.gold
+        }]
+    };
+
+    const lifecourseOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#374151',
+                    font: { family: "'Inter', sans-serif", size: 14 }
+                }
+            },
+            tooltip: { callbacks: { title: tooltipTitleCallback } }
+        },
+        scales: {
+            y: {
+                ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } },
+                grid: { color: '#e5e7eb' },
+                title: {
+                    display: true,
+                    text: 'Relative Causal Effect on Disease'
+                }
+            },
+            x: {
+                ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } },
+                grid: { display: false }
+            }
+        }
+    };
+    
+    const ganttData = {
+        labels: [
+            'Aim 1: Env. Data Collection', 'Aim 1: Association Analysis (FinnGen)', 'Aim 1: BNN Model Development', 'Aim 1: Replication & Meta-Analysis', 'Aim 1: Manuscript Preparation',
+            'Aim 2: Exposure GWAS (FinnGen)', 'Aim 2: Longitudinal Data Prep', 'Aim 2: Time-Varying MR Analysis', 'Aim 2: External Replication', 'Aim 2: Manuscript Preparation',
+            'Funding: Grant Writing (ERC)', 'Moonshot: R&D'
+        ],
+        datasets: [{
+            label: 'Timeline',
+            data: [
+                [0, 2], // Aim 1: Env. Data
+                [0, 1], // Aim 1: Primary Analysis
+                [1, 2], // Aim 1: BNN Development
+                [2, 3], // Aim 1: Replication
+                [2, 3], // Aim 1: Publication
+                [2, 3], // Aim 2: GWAS
+                [2, 4], // Aim 2: Exposure Collection
+                [3, 4], // Aim 2: Time-Varying MR
+                [4, 4], // Aim 2: Replication
+                [4, 5], // Aim 2: Publication
+                [3, 5], // Grant Writing
+                [4, 5]  // "Moonshot" R&D
+            ],
+            backgroundColor: [
+                newColorPalette.gold, newColorPalette.gold, newColorPalette.gold, newColorPalette.gold, newColorPalette.gold,
+                newColorPalette.crimson, newColorPalette.crimson, newColorPalette.crimson, newColorPalette.crimson, newColorPalette.crimson,
+                newColorPalette.darkBlue,
+                '#A0A0A0'
+            ],
+            barPercentage: 0.6,
+            categoryPercentage: 0.8
+        }]
+    };
+
+    const ganttOptions = {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback,
+                    label: function(context) {
+                        const v = context.raw;
+                        return `Years: ${v[0]} - ${v[1]}`;
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                min: 0,
+                max: 5,
+                ticks: {
+                    stepSize: 1,
+                    callback: function(value) {
+                        if (value === 0) return 'Start';
+                        return 'Year ' + value;
+                    }
+                },
+                title: {
+                    display: true,
+                    text: 'Project Timeline'
+                }
+            },
+            y: {
+                 ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif", size: 10 } },
+            }
+        }
+    };
+
+
+    window.addEventListener('load', () => {
+        const diseaseBurdenCtx = document.getElementById('diseaseBurdenChart');
+        if (diseaseBurdenCtx) {
+            new Chart(diseaseBurdenCtx, { type: 'bar', data: diseaseData, options: diseaseOptions });
+        }
+
+        const lifecourseCtx = document.getElementById('lifecourseChart');
+        if (lifecourseCtx) {
+            new Chart(lifecourseCtx, { type: 'line', data: lifecourseData, options: lifecourseOptions });
+        }
+        
+        const ganttCtx = document.getElementById('ganttChart');
+        if (ganttCtx) {
+            new Chart(ganttCtx, { type: 'bar', data: ganttData, options: ganttOptions });
+        }
+        
+        // Modal functionality
+        const modal = document.getElementById('source-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalText = document.getElementById('modal-text');
+        const closeBtn = document.getElementById('modal-close-btn');
+        const sourceBtns = document.querySelectorAll('.view-source-btn');
+
+        sourceBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modalTitle.textContent = btn.dataset.title;
+                modalText.textContent = btn.dataset.text;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            });
+        });
+
+        const closeModal = () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        };
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
